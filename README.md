@@ -30,6 +30,12 @@ Alternatively, you may deploy your garden to Netlify and it'll work out of the b
 
 If you don't care about the graph, you can simply remove it from this layout, [as explained here](https://github.com/maximevaillancourt/digital-garden-jekyll-template/discussions/132#discussioncomment-3625772).
 
+### Running Locally
+1. export PATH="$HOME/.rbenv/bin:$PATH"
+2. eval "$(rbenv init -)"
+3. rbenv local 3.1.4
+4. bundle exec jekyll serve
+
 ## License
 
 Source code is available under the [MIT license](LICENSE.md).
