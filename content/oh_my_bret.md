@@ -1,5 +1,6 @@
 ---
 title: "Never have I ever finished watching bret victor videos"
+date: "2024-03-26"
 ---
 
 Lately, I've been obsessed out [bret victor's](https://worrydream.com/) creations and this note is coming straight after the adreline rush that you get after watching his videos.
