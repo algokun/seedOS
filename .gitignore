@@ -13,3 +13,15 @@ _includes/notes_graph.json
 
 # Obsidian config
 .obsidian/
+
+.DS_Store
+.gitignore
+node_modules
+public
+prof
+tsconfig.tsbuildinfo
+.obsidian
+.quartz-cache
+private/
+.replit
+replit.nix
