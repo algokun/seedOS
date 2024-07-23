@@ -1,3 +1,8 @@
+---
+title: "on writing test cases"
+date: "2024-03-21"
+---
+
 ##### TL;DR
 
 1. Separation of concern - When writing test cases, it helps choose what to test and how to test (in isolation or within a function)
