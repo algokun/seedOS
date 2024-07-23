@@ -28,7 +28,7 @@ Over the past few days, I have spent most of my energy building up the test cove
 
 ##### Test Scenarios
 
-![[Pasted image 20240723234810.png]]
+![[tested.png]]
 
 - Now think about all the unexpected behaviours your code can get into. 
 - By doing this you can test how robust your code is and given these hurdles can it generate the ideal output.
