@@ -21,6 +21,8 @@ These are the things that I'm chasing right now and I'm investing all my energy 
 2. Building Reliable and Scalable Products
    - After failing countless times trying to build something very reliable, stable and can easily scale, I'm chasing this to feed my prolonged hunger towards it.
 3. Doodling
+   ![[cat.png]]
+
    - I like the art of doodling. I haven't developed any style or taste towards the things I like. I'm just a mere beginner trying to get the most out of drawing those lines and curves.
    - I like it for its calm and soothing feeling that puts me in a deep focus and creative zone.
    - I don't have any plans on how to move forward, I just enjoy it as a hobby.
