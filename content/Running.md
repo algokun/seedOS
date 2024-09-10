@@ -1,3 +1,8 @@
+---
+title: "on running and consistency"
+date: "2024-08-31"
+---
+
 I have been reading this book about running from Murakami. I fell in love with the book and his storytelling, I'm sure going to order more from the same author. At times I paused and appreciated the choices of words and the phrases. They're just so well crafted that it just keeps you reading for long hours.
 
 This happens to be perfect time for me to read this book. As I've been working on myself rigorously for the past few months and trying to be fit, I love this book even more. The book is a collection of his thoughts on running and what it means to him and after consistently doing this for decades, how it shaped his life.
@@ -6,7 +11,6 @@ This happens to be perfect time for me to read this book. As I've been working o
 - Pondering on this kept me thinking about how simply we commit to things without knowing how long are we gonna stick to it. I can imagine myself going to gym for decades and I want to make sure my future self knows what it means to me.
 - How important is your physical health and its well-being when you're chasing something or putting your whole life?
 
-  
 ### Quotes
 
 - Pain is inevitable. Suffering is optional
