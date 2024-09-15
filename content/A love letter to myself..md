@@ -1,5 +1,5 @@
 ---
-title: "A love letter to myself.."
+title: "letter-to-self"
 date: "2024-09-16"
 ---
 
