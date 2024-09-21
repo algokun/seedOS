@@ -1,0 +1,121 @@
+/* register the font  */
+@font-face {
+	font-family: "Inter";
+	src: url("/fonts/instagram-bold.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Inter";
+	src: url("/fonts/instagram-regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Pixel";
+	src: url("/fonts/pixel.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	@apply font-main m-0 p-0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	@apply text-black font-main;
+	line-height: 1.2;
+}
+h1 {
+	@apply text-4xl;
+}
+h2 {
+	@apply text-3xl;
+}
+h3 {
+	@apply text-2xl;
+}
+h4 {
+	@apply text-xl;
+}
+h5 {
+	@apply text-lg;
+}
+strong,
+b {
+	@apply font-bold;
+}
+a {
+	@apply text-lime-600;
+}
+a:hover {
+	@apply text-lime-700;
+}
+textarea {
+	width: 100%;
+	font-size: 16px;
+}
+input {
+	font-size: 16px;
+}
+table {
+	width: 100%;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 8px;
+}
+code {
+	@apply font-mono px-1 bg-gray-200 rounded-md;
+}
+pre {
+	@apply bg-gray-200 rounded-md;
+}
+pre > code {
+	all: unset;
+}
+blockquote {
+	border-left: 4px solid var(--accent);
+	padding: 0 0 0 20px;
+	margin: 0px;
+	font-size: 1.333em;
+}
+hr {
+	border: none;
+	border-top: 1px solid rgb(var(--gray-light));
+}
+.prose > p {
+	@apply mb-4;
+}
+.prose > ul {
+	@apply mb-4;
+	@apply list-disc px-4;
+
+	& > li {
+		& > ul {
+			@apply list-disc ml-4;
+			& > li {
+				& > ul {
+					@apply list-disc;
+				}
+			}
+		}
+	}
+}
+.prose > ol {
+	@apply list-decimal px-4;
+}
+@media (max-width: 720px) {
+	body {
+		font-size: 18px;
+	}
+	main {
+		padding: 1em;
+	}
+}

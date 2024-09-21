@@ -1,0 +1,74 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import { getCollection } from 'astro:content';
+import FormattedDate from '../components/FormattedDate.astro';
+
+const posts = (await getCollection('blog')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body class="bg-white h-dvh w-screen overflow-y-auto mx-auto max-w-screen-sm py-6 flex flex-col gap-4">
+		<Header />
+		<main class="flex flex-col flex-1 gap-6">
+			<div class="flex flex-col gap-1">
+				<p>
+					Hello, I’m 
+					Mohan
+					and I’m a little bit of everything @ MetaForms (previously WorkHack)
+				</p>
+				<p>
+					I always wished for a corner for myself to put everything’s on my head. If you happen to know me, you know how seriously I document the stories of life, but when it comes to putting a bit of something in words, I often stumble. So, I’ll be writing here as a habit.
+				</p>
+				<p>
+					Right now, I'm re-structuring my blog and will be adding a homepage that makes more sense. I have few ideas from other blogs, but lazy to put some effort to make it happen.
+				</p>
+			</div>
+
+			<!-- Showcase -->
+			 <div class="flex flex-col gap-4">
+				<h3 class="text-lg font-bold font-pixel">
+					Showcase
+				</h3>
+				<li class="list-none px-3 py-1 border">
+					<a href={`/art/`}>
+						<h4 class="text-base font-bold">Art Collection</h4>
+						<p class="text-sm text-gray-500">
+							Little corner for my art collection. Though my doodles are not that good, putting them all in one place, kinda looks good.
+						</p>
+					</a>
+				</li>
+			</div>
+			
+			<!-- blogs -->
+			 <div class="flex flex-col gap-4">
+				<h3 class="text-lg font-bold font-pixel">
+					Read
+				</h3>
+				<ul class="flex flex-col gap-4">
+					{
+						posts.map((post) => (
+							<li class="list-none px-3 py-1 border">
+							<a href={`/blog/${post.slug}/`}>
+								<h4 class="text-base font-bold">{post.data.title}</h4>
+							<p class="text-sm text-gray-500">
+									<FormattedDate date={post.data.pubDate} />
+								</p>
+							</a>
+						</li>
+					))
+					}
+				</ul>
+			</div>
+		</main>
+		<Footer />
+	</body>
+</html>

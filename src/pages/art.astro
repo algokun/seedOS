@@ -1,0 +1,45 @@
+---
+import { Image } from 'astro:assets';
+import BaseHead from '../components/BaseHead.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import { artPieces } from '../content/collection';
+import ArtPiece from '../components/ArtPiece.astro';
+
+// get all unique tags from the artPieces
+const allTags = [...new Set(artPieces.map((artPiece) => artPiece.tags).flat())];
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body class="flex flex-col gap-16 bg-[#F1F1F1] px-16 py-8 w-svw">	
+		<!-- header -->
+		 <div class="flex justify-between items-center w-full">
+			<div class="flex items-center gap-4">
+				<Image src="/favicon.svg" alt="logo" width={32} height={32} loading="eager" class="hover:animate-spin" />
+				<div class="flex flex-col m-0 p-0">
+					<h1 class="text-xl font-bold m-0">Picchi Geetalu</h1>
+					<p class="text-base text-gray-600 mb-0">The Art Wunderkammer</p>
+				</div>
+			</div>
+			<!-- <div>
+				<SwitchView />
+			</div> -->
+		 </div>
+		 <!-- content -->
+		<main id="main-art-container" class="flex flex-wrap relative w-full gap-12">
+			<div class="hidden">
+				{
+					allTags.map((tag) => (
+						<button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">{tag}</button>
+					))
+				}
+			</div>
+			{artPieces.map((artPiece) => (
+				<ArtPiece item={artPiece} />
+			))}
+		</main>
+	</body>
+</html>

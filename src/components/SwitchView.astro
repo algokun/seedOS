@@ -1,0 +1,64 @@
+---
+import type { HTMLAttributes } from 'astro/types';
+import { currentView } from '../store.js';
+interface Props extends HTMLAttributes<"button"> {
+}
+---
+
+<button id="switch-view" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+    {currentView.get() === "gallery" ? "View Emotes" : "View Gallery"}
+</button>
+
+<script>    
+    import { currentView } from '../store';
+
+    const button = document.getElementById("switch-view");
+    if (button) {
+        button.addEventListener("click", () => {
+            handleSwitch();
+        });
+    }
+
+    // function to handle when the switch happens
+    function handleSwitch() {
+        // change the view
+        const updatedView = currentView.get() === "gallery" ? "emotes" : "gallery";
+        currentView.set(updatedView);
+
+        // if the view is emotes, show the tags in the middle of the page
+        if (updatedView === "emotes") {
+            const mainArtContainer = document.getElementById("main-art-container");
+            if (!mainArtContainer) return;
+            mainArtContainer.className = "relative w-full flex flex-wrap gap-12";
+            mainArtContainer.style.height = "calc(100vh - 100px)";
+
+            // loop through the children of the mainArtContainer and do these in the following order
+            // 1. add a random x and y to each child and make sure all of them are neatly spread out
+            // 2. add a random rotation from -10 to 10 degrees to each child
+            // 3. add a random z-index from 1 to 50 to each child
+            // 4. bring all the children to the bottom of the page with absolute positioning
+            mainArtContainer.childNodes.forEach((child) => {
+                if (child instanceof HTMLElement) {
+                    const containerWidth = window.innerWidth;
+                    const containerHeight = window.innerHeight - 100;
+                    const numChildren = mainArtContainer.childNodes.length;
+                    const columns = Math.ceil(Math.sqrt(numChildren));
+                    const rows = Math.ceil(numChildren / columns);
+                    const cellWidth = containerWidth / columns;
+                    const cellHeight = containerHeight / rows;
+                    const index = Array.from(mainArtContainer.childNodes).indexOf(child);
+                    const col = index % columns;
+                    const row = Math.floor(index / columns);
+                    const x = col * cellWidth + Math.random() * (cellWidth / 2) - cellWidth / 4;
+                    const y = row * cellHeight + Math.random() * (cellHeight / 2) - cellHeight / 4;
+                    child.style.transform = `translate(${x}px, ${y}px)`;
+                    child.style.transform = `rotate(${Math.random() * 20 - 10}deg)`;
+                    child.style.zIndex = `${Math.floor(Math.random() * 50) + 1}`;
+                    child.style.position = "absolute";
+                    child.style.bottom = "0";
+                }
+            });
+        }
+
+    }
+</script>

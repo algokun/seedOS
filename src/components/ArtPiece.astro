@@ -1,0 +1,63 @@
+---
+import { Image } from 'astro:assets';
+import type { HTMLAttributes } from 'astro/types';
+import type { ArtPiece } from '../content/collection';
+
+interface Props extends HTMLAttributes<"div"> {
+    item: ArtPiece
+}
+
+const { item } = Astro.props;
+---
+
+<div id="art-piece" class="w-96 p-2 bg-white rotate-3 hover:rotate-0 transition-all duration-300" style="box-shadow: 0 0 0 1px rgba(9,30,66,.08), 0 4px 4px 0px #091E4215;">
+    <Image src={item.image} alt={item.title} width={384} height={384} loading="eager" />
+</div>
+
+<script>
+    import { currentView } from '../store';
+    const artPiece = document.getElementById("art-piece");
+
+    // this art piece can be moved around the container when the user clicks on it and drags it around.
+    // the container is already relatively positioned, so we can just change the transform property of the selected art piece.
+    // this behavior should only happen when the `currentView` is "emotes"
+    if (artPiece) {
+        let isDragging = false;
+        let startX: number, startY: number;
+
+        artPiece.addEventListener("mousedown", (e) => {
+            if (currentView.get() === "emotes") {
+                isDragging = true;
+                startX = e.clientX - artPiece.offsetLeft;
+                startY = e.clientY - artPiece.offsetTop;
+                artPiece.style.zIndex = "1000"; // Bring to front while dragging
+            }
+        });
+
+        document.addEventListener("mousemove", (e) => {
+            if (isDragging && currentView.get() === "emotes") {
+                const newX = e.clientX - startX;
+                const newY = e.clientY - startY;
+                artPiece.style.left = `${newX}px`;
+                artPiece.style.top = `${newY}px`;
+            }
+        });
+
+        document.addEventListener("mouseup", () => {
+            if (isDragging && currentView.get() === "emotes") {
+                isDragging = false;
+                artPiece.style.zIndex = ""; // Reset z-index
+            }
+        });
+
+        // Prevent dragging outside the viewport
+        document.addEventListener("mouseleave", () => {
+            if (isDragging && currentView.get() === "emotes") {
+                isDragging = false;
+                artPiece.style.zIndex = ""; // Reset z-index
+            }
+        });
+        
+    }
+
+</script>
