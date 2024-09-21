@@ -1,3 +1,8 @@
+---
+title: "Roadblock"
+date: "2024-04-26"
+---
+
 This note is a work in progress, and the thoughts are streamed from my anxiety.
 
 Around August 2023, I hit a major roadblock in my life. I felt clueless about everything. I thought it was one of those days when you pent up emotions, and they burst open and thunder over your head, and that's true.

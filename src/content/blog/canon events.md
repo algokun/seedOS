@@ -1,4 +1,9 @@
-![[canon.jpg]]
+---
+title: "Canon Events"
+date: "2024-09-18"
+---
+
+![canon](/canon.jpg)
 
 If you're a fan of Marvel, you know what a canon event is! but for those who don't - it's a life event that's pivotal to character development as a person - that redefines who you are.
 

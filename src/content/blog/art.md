@@ -1,8 +1,6 @@
 ---
 title: "Art"
-description: "Lorem ipsum dolor sit amet"
-pubDate: "Mar 21 2024"
-heroImage: "/blog-placeholder-3.jpg"
+date: "2024-03-21"
 ---
 
 I make doodles, and it's been almost a year since I started them for fun. I visited the Kochi Biennale Art Fest last year, which planted the seed in my head for this habit. It almost felt like watching Pinterest feed on walls.

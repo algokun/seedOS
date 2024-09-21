@@ -1,4 +1,9 @@
-![[benchmark.png]]
+---
+title: "Benchmark"
+date: "2024-04-14"
+---
+
+![benchmark](/benchmark.png)
 
 It was the first week of March, and our first company was off-site. We had a small activity where every team was supposed to drop a shoe from a line, and the winner was the one who went the farthest. Our strategy was to use the whole body height, but we realized it was impossible and stuck to the upper body height. After the first round, we were shown the average height other teams have crossed. This just changed our strategy, and we went back and started to think about how to use the whole body's height, and, yeah, we finally cracked the solution.
 

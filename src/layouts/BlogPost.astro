@@ -6,12 +6,12 @@ import FormattedDate from '../components/FormattedDate.astro';
 
 type Props = CollectionEntry<'blog'>['data'];
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const { title, description, date, updatedDate, heroImage } = Astro.props;
 ---
 
 <html lang="en">
 	<head>
-		<BaseHead title={title} description={description} />
+		<BaseHead title={title} description={description ?? ''} />
 	</head>
 
 	<body class="bg-white h-dvh w-screen overflow-y-auto mx-auto max-w-screen-sm py-6 flex flex-col gap-4">
@@ -21,12 +21,14 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 					<!-- title -->
 					<div class="flex flex-col gap-2 pb-6">
 						<div class="flex flex-col gap-1 text-sm text-gray-500">
-							<FormattedDate date={pubDate} />
-							{updatedDate && <div class="text-xs">
-								Last updated on <FormattedDate date={updatedDate} />
-							</div>}
+							<FormattedDate date={date} />
+							{updatedDate && (
+								<div class="text-xs">
+									Last updated on <FormattedDate date={updatedDate} />
+								</div>
+							)}
 						</div>
-						<h1 class="">{title}</h1>
+						<h1 class="text-2xl font-bold">{title}</h1>
 					</div>
 					<slot />
 				</div>

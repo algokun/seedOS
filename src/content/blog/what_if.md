@@ -17,4 +17,4 @@ date: "2024-03-09"
 - We all felt this need of super power when GoT released the finale. Well, if you think about it, it just boils down to changing a few decisions and letting the story navigate based on that decision.
 - To mimic the same, Netflix produced an interactive film, where at every critical turning point of the story, it asks you to choose what should happen next.
 
-  ![[netflix_interactive.png]]
+![netflix_interactive](/netflix_interactive.png)

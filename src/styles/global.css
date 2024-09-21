@@ -1,16 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 /* register the font  */
-@font-face {
-	font-family: "Inter";
-	src: url("/fonts/instagram-bold.ttf") format("truetype");
-	font-weight: bold;
-	font-style: normal;
-}
-@font-face {
-	font-family: "Inter";
-	src: url("/fonts/instagram-regular.ttf") format("truetype");
-	font-weight: normal;
-	font-style: normal;
-}
 @font-face {
 	font-family: "Pixel";
 	src: url("/fonts/pixel.ttf") format("truetype");
@@ -20,6 +10,9 @@
 
 body {
 	@apply font-main m-0 p-0;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
 }
 
 h1,
@@ -109,7 +102,7 @@ hr {
 	}
 }
 .prose > ol {
-	@apply list-decimal px-4;
+	@apply list-decimal px-4 mb-4;
 }
 @media (max-width: 720px) {
 	body {
