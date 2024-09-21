@@ -1,0 +1,188 @@
+{
+  "main": {
+    "id": "ffe0790514d53706",
+    "type": "split",
+    "children": [
+      {
+        "id": "1f63d11499d60e28",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ce38bdc3e4985219",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "canon events.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "4e3abcca466aa9d7",
+    "type": "split",
+    "children": [
+      {
+        "id": "ff32378479f6a745",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f418b4bc52c4bb55",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "d809b90bb8f85188",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "19c1a8d753cd955c",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "a39f9fe64b211b6d",
+    "type": "split",
+    "children": [
+      {
+        "id": "478bae7ff5d5a3c3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1859e3802fb6b6bb",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "canon events.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": true,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "7566c66d77028025",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "canon events.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "7c187d643bd48da6",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "87fcb2bb8049f435",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "canon events.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "ce38bdc3e4985219",
+  "lastOpenFiles": [
+    "Untitled.md",
+    "canon events.md",
+    "images/canon.jpg",
+    "images/The Spot.jpg",
+    "The Spot.jpg",
+    "2024-09-18.md",
+    "Introspection.md",
+    "Company Introspection.md",
+    "Why did I start documenting?.md",
+    "Running.md",
+    "A love letter to myself..md",
+    "letter-to-self.md",
+    "Time to build my own RSS.md",
+    "Distributed Systems.md",
+    "The long term game.md",
+    "The Nothing Theory.md",
+    "siddish.md",
+    "Routine.md",
+    "roadblock.md",
+    "Reflection - How's it going, anon? (22-28 Jun).md",
+    "Focus.md",
+    "index.md",
+    "TRD - Writing Unit Tests.md",
+    "Untitled.canvas",
+    "first_talk.md",
+    "Cooking Ideas.md",
+    "benchmark.md",
+    "art.md",
+    "RCA - Form Submission is Missing IP Address.md",
+    "on writing test cases.md",
+    "Pasted image 20240723234810.png",
+    "images/cat.png",
+    "images/Tone Changing.png",
+    "Pasted image 20240514213625.png",
+    "Untitled",
+    "images/benchmark.png"
+  ]
+}
